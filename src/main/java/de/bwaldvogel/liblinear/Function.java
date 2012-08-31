@@ -1,7 +1,7 @@
 package de.bwaldvogel.liblinear;
 
 // origin: tron.h
-interface Function {
+public interface Function {
 
     double fun(double[] w);
 
