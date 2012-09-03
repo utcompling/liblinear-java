@@ -1,6 +1,6 @@
 package de.bwaldvogel.liblinear;
 
-class L2R_LrFunction implements Function {
+public class L2R_LrFunction implements Function {
 
     private final double[] C;
     private final double[] z;

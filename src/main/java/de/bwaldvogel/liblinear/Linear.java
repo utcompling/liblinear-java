@@ -90,12 +90,12 @@ public class Linear {
     }
 
     /** used as complex return type */
-    private static class GroupClassesReturn {
+    public static class GroupClassesReturn {
 
-        final int[] count;
-        final int[] label;
-        final int   nr_class;
-        final int[] start;
+        public final int[] count;
+        public final int[] label;
+        public final int   nr_class;
+        public final int[] start;
 
         GroupClassesReturn( int nr_class, int[] label, int[] start, int[] count ) {
             this.nr_class = nr_class;
@@ -105,7 +105,7 @@ public class Linear {
         }
     }
 
-    private static GroupClassesReturn groupClasses(Problem prob, int[] perm) {
+    public static GroupClassesReturn groupClasses(Problem prob, int[] perm) {
         int l = prob.l;
         int max_nr_class = 16;
         int nr_class = 0;
@@ -1746,7 +1746,7 @@ public class Linear {
         }
     }
 
-    private static void train_one(Problem prob, Parameter param, double[] w, double Cp, double Cn) {
+    public static void train_one(Problem prob, Parameter param, double[] w, double Cp, double Cn) {
         double eps = param.eps;
         int pos = 0;
         for (int i = 0; i < prob.l; i++)

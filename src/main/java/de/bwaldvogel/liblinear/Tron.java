@@ -5,7 +5,7 @@ import static de.bwaldvogel.liblinear.Linear.info;
 /**
  * Trust Region Newton Method optimization
  */
-class Tron {
+public class Tron {
 
     private final Function fun_obj;
 
@@ -27,7 +27,7 @@ class Tron {
         this.max_iter = max_iter;
     }
 
-    void tron(double[] w) {
+    public void tron(double[] w) {
         // Parameters for updating the iterates.
         double eta0 = 1e-4, eta1 = 0.25, eta2 = 0.75;
 

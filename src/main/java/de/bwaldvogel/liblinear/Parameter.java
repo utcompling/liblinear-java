@@ -5,16 +5,16 @@ import static de.bwaldvogel.liblinear.Linear.copyOf;
 
 public final class Parameter {
 
-    double     C;
+    public double     C;
 
     /** stopping criteria */
-    double     eps;
+    public double     eps;
 
-    SolverType solverType;
+    public SolverType solverType;
 
-    double[]   weight      = null;
+    public double[]   weight      = null;
 
-    int[]      weightLabel = null;
+    public int[]      weightLabel = null;
 
     double     p;
 
